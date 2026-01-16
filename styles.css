@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: #fcfcfc;
+    background-color: #353535;
+}
+
+body {
+    margin-top: 10vh;
+    margin-left: 50vh;
+    margin-right: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    margin-bottom: 10vh;
+}
+
+.btn {
+    margin-left: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    padding: 0;
+    border: 6px solid #c6c6c6a4;
+    border-radius: 50%;
+    background: none;
+    display: inline-flex;
+    overflow: hidden; 
+    margin-right: 15vh;
+}
+
+#earth {
+    display: block;
+    object-fit: cover;
+    transform: scale(1.15);  
+}
+
+#moon {
+    display: block;
+    object-fit: cover;
+    transform: scale(1.7);  
+}
