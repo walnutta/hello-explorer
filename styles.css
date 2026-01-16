@@ -21,21 +21,26 @@ body {
 }
 
 .btn {
-    margin-left: 15vh;
+    margin-left: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-button {
+a {
     padding: 0;
-    border: 6px solid #c6c6c6a4;
+    border: 6px solid transparent;
     border-radius: 50%;
     background: none;
     display: inline-flex;
     overflow: hidden; 
     margin-right: 15vh;
+    transition: all 0.3s ease;
+}
+a:hover, a.active{
+    border-color: #c6c6c6a4;       
+    transform: scale(1.05); 
 }
 
 #earth {
@@ -47,5 +52,5 @@ button {
 #moon {
     display: block;
     object-fit: cover;
-    transform: scale(1.7);  
+    transform: scale(1.60);  
 }
