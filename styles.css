@@ -3,17 +3,50 @@
 * {
     font-family: 'Inter', sans-serif;
     color: #fcfcfc;
-    background-color: #353535;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: -9px;
 }
 
 body {
-    margin-top: 10vh;
+    margin-top: 6vh;
     margin-left: 50vh;
     margin-right: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+    background: 
+        radial-gradient(circle at 20% 30%, #293043e0 0%, transparent 50%),
+        radial-gradient(circle at 80% 40%, #171a25 0%, transparent 85%),
+        radial-gradient(circle at 50% 80%, #271b70 0%, transparent 100%);
+    background-size: 300% 300%;
+    background-position: 50% 50%;
+    animation: skyDrift 20s ease-in-out infinite alternate;
+}
+
+@keyframes skyDrift {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+img {
+  pointer-events: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
 }
 
 .intro {
@@ -25,6 +58,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -10px;
     
 }
 
@@ -38,9 +72,14 @@ a {
     margin-right: 15vh;
     transition: all 0.3s ease;
 }
-a:hover, a.active{
+a:hover{
     border-color: #c6c6c6a4;       
-    transform: scale(1.05); 
+    transform: rotate(180deg);
+    box-shadow: 0 0 15px rgba(224, 236, 233, 0.6);
+}
+
+a.active {
+    border-color:#c6c6c6a4;
 }
 
 #earth {
